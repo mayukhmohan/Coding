@@ -1,0 +1,13 @@
+dfde
+
+
+
+
+
+
+hjkl - navigation
+iIaA - Editing in Line
+xr - making changes while in command mode
+se nu - Show Line Number
+%s/target/source/g - replace all
+%s/target/source/gc - replace confirmation

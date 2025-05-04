@@ -43,6 +43,26 @@ void DFSWt(vector<pair<int, int>> graph[]){
     }
 }
 
+void BFS(vector<int> graph[], int s){
+    vector<bool> visited(vertex, false);
+    queue<int> q;
+    q.push(s);
+    visited[s] = true;
+
+    while(!q.empty()){
+        int u = q.front();
+        q.pop();
+        cout<<u<<" ";
+
+        for(int v = 0; v < graph[u].size(); v++){
+            if(!visited[graph[u][v]]) {
+                visited[graph[u][v]] = true;
+                q.push(graph[u][v]);
+            }
+        }
+    }
+}
+
 int main(){
     vector<int> graph[vertex];
 
@@ -55,6 +75,10 @@ int main(){
     addEdge(graph, 3, 4);
 
     DFS(graph);
+    cout<<endl;
+
+    BFS(graph, 0);
+    cout<<endl;
 
     vector<pair<int, int>> graphWt[vertex];
 

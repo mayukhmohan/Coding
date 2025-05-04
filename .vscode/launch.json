@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "D:\\system_design_and_cp_algo_ds\\Coding\\a.exe",
+            "program": "D:\\system_design_and_cp_algo_ds\\Coding\\sebi_practice\\a.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
